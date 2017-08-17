@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'APJTextPickerView_Example' do
+  pod 'APJTextPickerView', :path => '../'
+
+  target 'APJTextPickerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
