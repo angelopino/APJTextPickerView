@@ -39,12 +39,12 @@
 		607FACE51AFB9204008FA782 /* APJTextPickerView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APJTextPickerView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6595C55D9C62A6FC45396E71 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		7D7ECDBBE63B784F142804C4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6595C55D9C62A6FC45396E71 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7D7ECDBBE63B784F142804C4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8E96791A8358AE4FB32D9B00 /* Pods_APJTextPickerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APJTextPickerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB600FDDD2F34098ED3B8966 /* Pods-APJTextPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APJTextPickerView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-APJTextPickerView_Example/Pods-APJTextPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C4216E9BB6EDD7CFACA35BE2 /* Pods-APJTextPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APJTextPickerView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APJTextPickerView_Tests/Pods-APJTextPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C9AAB1801EEF7FC986059F89 /* APJTextPickerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = APJTextPickerView.podspec; path = ../APJTextPickerView.podspec; sourceTree = "<group>"; };
+		C9AAB1801EEF7FC986059F89 /* APJTextPickerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = APJTextPickerView.podspec; path = ../APJTextPickerView.podspec; sourceTree = "<group>"; };
 		F275C3A6739C1F31517F2B3B /* Pods-APJTextPickerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APJTextPickerView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APJTextPickerView_Tests/Pods-APJTextPickerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2919C66982A3D4DF28A1951 /* Pods_APJTextPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APJTextPickerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -452,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -492,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -506,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = APJTextPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -520,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = APJTextPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
