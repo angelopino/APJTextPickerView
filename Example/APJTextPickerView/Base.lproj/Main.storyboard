@@ -1,22 +1,90 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="APJTextPickerView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbd-KU-Mdw">
+                                <rect key="frame" x="16" y="50" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ft3-jf-xEe" customClass="APJTextPickerView" customModule="APJTextPickerView">
+                                <rect key="frame" x="16" y="76" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fso-V4-YSr">
+                                <rect key="frame" x="16" y="136" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GJB-QH-NgR" customClass="APJTextPickerView" customModule="APJTextPickerView">
+                                <rect key="frame" x="16" y="162" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strings picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpe-KU-w9A">
+                                <rect key="frame" x="16" y="222" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q6w-zM-Eyw" customClass="APJTextPickerView" customModule="APJTextPickerView">
+                                <rect key="frame" x="16" y="248" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GJB-QH-NgR" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="0Yj-ng-Qtw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ft3-jf-xEe" secondAttribute="trailing" id="51F-UC-aV7"/>
+                            <constraint firstItem="GJB-QH-NgR" firstAttribute="top" secondItem="fso-V4-YSr" secondAttribute="bottom" constant="5" id="ADo-QK-MML"/>
+                            <constraint firstItem="bbd-KU-Mdw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="HW3-9C-PQH"/>
+                            <constraint firstItem="GJB-QH-NgR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="IO7-92-bFL"/>
+                            <constraint firstItem="Q6w-zM-Eyw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Jc3-PN-Hng"/>
+                            <constraint firstItem="fso-V4-YSr" firstAttribute="top" secondItem="Ft3-jf-xEe" secondAttribute="bottom" constant="30" id="KDq-Sa-kv2"/>
+                            <constraint firstItem="fso-V4-YSr" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Pq1-bw-BZ1"/>
+                            <constraint firstItem="bbd-KU-Mdw" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="Pte-Mm-L0y"/>
+                            <constraint firstItem="rpe-KU-w9A" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Qpp-l4-M4e"/>
+                            <constraint firstItem="Ft3-jf-xEe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="RwI-xw-vdL"/>
+                            <constraint firstItem="rpe-KU-w9A" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="aJf-zo-Ssg"/>
+                            <constraint firstItem="rpe-KU-w9A" firstAttribute="top" secondItem="GJB-QH-NgR" secondAttribute="bottom" constant="30" id="ais-Or-SaB"/>
+                            <constraint firstItem="Q6w-zM-Eyw" firstAttribute="top" secondItem="rpe-KU-w9A" secondAttribute="bottom" constant="5" id="clG-QF-rje"/>
+                            <constraint firstItem="Ft3-jf-xEe" firstAttribute="top" secondItem="bbd-KU-Mdw" secondAttribute="bottom" constant="5" id="nhe-lI-cgw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bbd-KU-Mdw" secondAttribute="trailing" id="ory-yr-ZcT"/>
+                            <constraint firstItem="Q6w-zM-Eyw" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="voq-iG-cRW"/>
+                            <constraint firstItem="fso-V4-YSr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="zlk-xV-HBy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textDatePickerView" destination="Ft3-jf-xEe" id="ZmN-Cn-Yzq"/>
+                        <outlet property="textStringsPickerView" destination="Q6w-zM-Eyw" id="7Bv-ZE-odJ"/>
+                        <outlet property="textTimePickerView" destination="GJB-QH-NgR" id="kT7-CD-KIK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

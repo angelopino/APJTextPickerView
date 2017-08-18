@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B8B67B6A27EDDF61790E40BCAFEC817 /* APJTextPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCF4AFB89D91F66944129B4DDD53C38 /* APJTextPickerView-dummy.m */; };
+		2FDF2D391DCF439BCE0E7C42DBE64056 /* APJTextPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4047BD8D1605272389A38A4BD2AEE961 /* APJTextPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		313CA74C5FA4B942B9028D9226906975 /* Pods-APJTextPickerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07736BF81D25F879F02AE4492BEF8B1E /* Pods-APJTextPickerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31B2B61085AF9A4C50FD842B59D58375 /* Pods-APJTextPickerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 069E2C07F827272E75B83E90D145C687 /* Pods-APJTextPickerView_Example-dummy.m */; };
+		65D714F108E0EC3F70E1DD91EF018DC2 /* APJTextPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B43AC98E78346273853C4B46C371A2C /* APJTextPickerView.swift */; };
+		81CA7CDAB7EDD04B37AF5A940ADE048F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A65896200B97114FB45B824F6FF4C0F6 /* Pods-APJTextPickerView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3099713C2FE9E6800F9E68705A3443B /* Pods-APJTextPickerView_Tests-dummy.m */; };
+		D6ED29FEFE638432460C74A41D0CF6DF /* Pods-APJTextPickerView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0F137A9D6B034FFF855167BE8584FE2 /* Pods-APJTextPickerView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECEB422CCB6A73DEA981B83A0F98B956 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F695BE30CDBE70A4390F83A6E6E4BEC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEB3FC9EB6A8FB63320CC509CA2F2A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0797CE936BE2B2825310BE5565398F3;
+			remoteInfo = APJTextPickerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B3292DA1F05706AC0A83258C9B390F /* Pods-APJTextPickerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APJTextPickerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		057C2C210191DC292F12BE949AFE232B /* Pods-APJTextPickerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APJTextPickerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		069E2C07F827272E75B83E90D145C687 /* Pods-APJTextPickerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APJTextPickerView_Example-dummy.m"; sourceTree = "<group>"; };
+		07736BF81D25F879F02AE4492BEF8B1E /* Pods-APJTextPickerView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-APJTextPickerView_Example-umbrella.h"; sourceTree = "<group>"; };
+		11D1599CA997BD6EF3D3875C0D84D1C9 /* Pods-APJTextPickerView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APJTextPickerView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1B43AC98E78346273853C4B46C371A2C /* APJTextPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APJTextPickerView.swift; path = APJTextPickerView/Classes/APJTextPickerView.swift; sourceTree = "<group>"; };
+		20018802EBB0F094DAFFFB0F99F41BFE /* Pods-APJTextPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APJTextPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2147D5E5547B86CB747EA9AE52CB6D3C /* Pods_APJTextPickerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_APJTextPickerView_Tests.framework; path = "Pods-APJTextPickerView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B9930D6BA9A7543CEE31DBDD332D0E0 /* Pods-APJTextPickerView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APJTextPickerView_Example-resources.sh"; sourceTree = "<group>"; };
+		34F16EA15DEC0AC0066680E6B90C77A3 /* Pods-APJTextPickerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APJTextPickerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		36F03AED36457F57E81ECFF77706E0F2 /* APJTextPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = APJTextPickerView.framework; path = APJTextPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4047BD8D1605272389A38A4BD2AEE961 /* APJTextPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APJTextPickerView-umbrella.h"; sourceTree = "<group>"; };
+		47ED5E8AD334C520CADC25B165EE58FA /* APJTextPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = APJTextPickerView.modulemap; sourceTree = "<group>"; };
+		4F760675FC02B76DAECDC2534B06D306 /* APJTextPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APJTextPickerView.xcconfig; sourceTree = "<group>"; };
+		53A213A4D93DBE944D134D90550816D3 /* Pods-APJTextPickerView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-APJTextPickerView_Example.modulemap"; sourceTree = "<group>"; };
+		54E08136C985BA7C4D2F57DDB12B1659 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57DABB1920582C3398ED412334526030 /* Pods-APJTextPickerView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APJTextPickerView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		62FE4F73DFB50D24D9DAD2E5F9D0C28C /* Pods-APJTextPickerView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APJTextPickerView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B7519F96C85662AD116A2531717EAC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FA7A94A2CEC76A99A2D19696CBF67C8 /* Pods-APJTextPickerView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-APJTextPickerView_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BA24DC53FE05973C1AF6A89806DDE25 /* Pods-APJTextPickerView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APJTextPickerView_Tests-resources.sh"; sourceTree = "<group>"; };
+		9D19DD9665A86AE2903A9F2BB0460D07 /* Pods-APJTextPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APJTextPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A0F137A9D6B034FFF855167BE8584FE2 /* Pods-APJTextPickerView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-APJTextPickerView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A3099713C2FE9E6800F9E68705A3443B /* Pods-APJTextPickerView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APJTextPickerView_Tests-dummy.m"; sourceTree = "<group>"; };
+		A60D3B293B660F71E08DCCAA4E9FD8F9 /* APJTextPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APJTextPickerView-prefix.pch"; sourceTree = "<group>"; };
+		B5E1BEADF40B64BACF9B7EFC46571542 /* Pods-APJTextPickerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APJTextPickerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B7DFE2DCEC9F1E28993E2B7F1F931635 /* Pods-APJTextPickerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APJTextPickerView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DFCF4AFB89D91F66944129B4DDD53C38 /* APJTextPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APJTextPickerView-dummy.m"; sourceTree = "<group>"; };
+		E5FED2991FC66B77FE8EA7FE7314C3B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B6B5D5B28085454B67E447621B1B36 /* Pods_APJTextPickerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_APJTextPickerView_Example.framework; path = "Pods-APJTextPickerView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54D31380C8ADE69F18B6B51F3B74BE62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECEB422CCB6A73DEA981B83A0F98B956 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A08BEF90098B570D56F940D6CFD0FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F695BE30CDBE70A4390F83A6E6E4BEC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F608F5ACEB84884A1518346DC85A0429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81CA7CDAB7EDD04B37AF5A940ADE048F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2948FEBF56190182A60DDCCD404EA7E5 /* APJTextPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				1B43AC98E78346273853C4B46C371A2C /* APJTextPickerView.swift */,
+				6641478328FA2AA97DA6B258D6130E8B /* Support Files */,
+			);
+			name = APJTextPickerView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3B1FD1C3C5EEB95B75FCA19EDAE5218F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA0A1259D8E957682075F421C2587DD1 /* Pods-APJTextPickerView_Example */,
+				E648BFAFC4797D8CABE0F3C93C921D68 /* Pods-APJTextPickerView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6641478328FA2AA97DA6B258D6130E8B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				47ED5E8AD334C520CADC25B165EE58FA /* APJTextPickerView.modulemap */,
+				4F760675FC02B76DAECDC2534B06D306 /* APJTextPickerView.xcconfig */,
+				DFCF4AFB89D91F66944129B4DDD53C38 /* APJTextPickerView-dummy.m */,
+				A60D3B293B660F71E08DCCAA4E9FD8F9 /* APJTextPickerView-prefix.pch */,
+				4047BD8D1605272389A38A4BD2AEE961 /* APJTextPickerView-umbrella.h */,
+				E5FED2991FC66B77FE8EA7FE7314C3B5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/APJTextPickerView";
+			sourceTree = "<group>";
+		};
+		6EAA9048C16321B95A39C51D765CB6ED /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2948FEBF56190182A60DDCCD404EA7E5 /* APJTextPickerView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6EAA9048C16321B95A39C51D765CB6ED /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				91D9462E47E11188E74069FD0ECD08AA /* Products */,
+				3B1FD1C3C5EEB95B75FCA19EDAE5218F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91D9462E47E11188E74069FD0ECD08AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36F03AED36457F57E81ECFF77706E0F2 /* APJTextPickerView.framework */,
+				F0B6B5D5B28085454B67E447621B1B36 /* Pods_APJTextPickerView_Example.framework */,
+				2147D5E5547B86CB747EA9AE52CB6D3C /* Pods_APJTextPickerView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA0A1259D8E957682075F421C2587DD1 /* Pods-APJTextPickerView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				54E08136C985BA7C4D2F57DDB12B1659 /* Info.plist */,
+				53A213A4D93DBE944D134D90550816D3 /* Pods-APJTextPickerView_Example.modulemap */,
+				057C2C210191DC292F12BE949AFE232B /* Pods-APJTextPickerView_Example-acknowledgements.markdown */,
+				03B3292DA1F05706AC0A83258C9B390F /* Pods-APJTextPickerView_Example-acknowledgements.plist */,
+				069E2C07F827272E75B83E90D145C687 /* Pods-APJTextPickerView_Example-dummy.m */,
+				B7DFE2DCEC9F1E28993E2B7F1F931635 /* Pods-APJTextPickerView_Example-frameworks.sh */,
+				2B9930D6BA9A7543CEE31DBDD332D0E0 /* Pods-APJTextPickerView_Example-resources.sh */,
+				07736BF81D25F879F02AE4492BEF8B1E /* Pods-APJTextPickerView_Example-umbrella.h */,
+				B5E1BEADF40B64BACF9B7EFC46571542 /* Pods-APJTextPickerView_Example.debug.xcconfig */,
+				9D19DD9665A86AE2903A9F2BB0460D07 /* Pods-APJTextPickerView_Example.release.xcconfig */,
+			);
+			name = "Pods-APJTextPickerView_Example";
+			path = "Target Support Files/Pods-APJTextPickerView_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E648BFAFC4797D8CABE0F3C93C921D68 /* Pods-APJTextPickerView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7B7519F96C85662AD116A2531717EAC5 /* Info.plist */,
+				7FA7A94A2CEC76A99A2D19696CBF67C8 /* Pods-APJTextPickerView_Tests.modulemap */,
+				11D1599CA997BD6EF3D3875C0D84D1C9 /* Pods-APJTextPickerView_Tests-acknowledgements.markdown */,
+				57DABB1920582C3398ED412334526030 /* Pods-APJTextPickerView_Tests-acknowledgements.plist */,
+				A3099713C2FE9E6800F9E68705A3443B /* Pods-APJTextPickerView_Tests-dummy.m */,
+				62FE4F73DFB50D24D9DAD2E5F9D0C28C /* Pods-APJTextPickerView_Tests-frameworks.sh */,
+				9BA24DC53FE05973C1AF6A89806DDE25 /* Pods-APJTextPickerView_Tests-resources.sh */,
+				A0F137A9D6B034FFF855167BE8584FE2 /* Pods-APJTextPickerView_Tests-umbrella.h */,
+				34F16EA15DEC0AC0066680E6B90C77A3 /* Pods-APJTextPickerView_Tests.debug.xcconfig */,
+				20018802EBB0F094DAFFFB0F99F41BFE /* Pods-APJTextPickerView_Tests.release.xcconfig */,
+			);
+			name = "Pods-APJTextPickerView_Tests";
+			path = "Target Support Files/Pods-APJTextPickerView_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		161F9F0C4C9DD546F082566399CDE753 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				313CA74C5FA4B942B9028D9226906975 /* Pods-APJTextPickerView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21D18E7FB2805DA79247D14C2013B08 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDF2D391DCF439BCE0E7C42DBE64056 /* APJTextPickerView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC61F73BEC73C6A7524C9E907B11E8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6ED29FEFE638432460C74A41D0CF6DF /* Pods-APJTextPickerView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E711C19CB10AD390178C4B1F92DA093 /* Pods-APJTextPickerView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15DB3EE016519A51B67D8F72516D5BC2 /* Build configuration list for PBXNativeTarget "Pods-APJTextPickerView_Tests" */;
+			buildPhases = (
+				AF32F38680D512C8C576D10988B61605 /* Sources */,
+				5A08BEF90098B570D56F940D6CFD0FBD /* Frameworks */,
+				EDC61F73BEC73C6A7524C9E907B11E8F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-APJTextPickerView_Tests";
+			productName = "Pods-APJTextPickerView_Tests";
+			productReference = 2147D5E5547B86CB747EA9AE52CB6D3C /* Pods_APJTextPickerView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9AC6C9C2E10587A541626C88B8F3CFC5 /* Pods-APJTextPickerView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F92DFCE503074B7B269BD0837D539A36 /* Build configuration list for PBXNativeTarget "Pods-APJTextPickerView_Example" */;
+			buildPhases = (
+				70B87E5A3B9D824B8C8425FA8E343D2C /* Sources */,
+				54D31380C8ADE69F18B6B51F3B74BE62 /* Frameworks */,
+				161F9F0C4C9DD546F082566399CDE753 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29440671D0A685F14478839128425BA3 /* PBXTargetDependency */,
+			);
+			name = "Pods-APJTextPickerView_Example";
+			productName = "Pods-APJTextPickerView_Example";
+			productReference = F0B6B5D5B28085454B67E447621B1B36 /* Pods_APJTextPickerView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0797CE936BE2B2825310BE5565398F3 /* APJTextPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8948866AE302C54D2E94FDB45348F87 /* Build configuration list for PBXNativeTarget "APJTextPickerView" */;
+			buildPhases = (
+				66F7961FAE58A8DE2D918A6F23FACFE3 /* Sources */,
+				F608F5ACEB84884A1518346DC85A0429 /* Frameworks */,
+				D21D18E7FB2805DA79247D14C2013B08 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APJTextPickerView;
+			productName = APJTextPickerView;
+			productReference = 36F03AED36457F57E81ECFF77706E0F2 /* APJTextPickerView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 91D9462E47E11188E74069FD0ECD08AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0797CE936BE2B2825310BE5565398F3 /* APJTextPickerView */,
+				9AC6C9C2E10587A541626C88B8F3CFC5 /* Pods-APJTextPickerView_Example */,
+				5E711C19CB10AD390178C4B1F92DA093 /* Pods-APJTextPickerView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66F7961FAE58A8DE2D918A6F23FACFE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8B67B6A27EDDF61790E40BCAFEC817 /* APJTextPickerView-dummy.m in Sources */,
+				65D714F108E0EC3F70E1DD91EF018DC2 /* APJTextPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B87E5A3B9D824B8C8425FA8E343D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B2B61085AF9A4C50FD842B59D58375 /* Pods-APJTextPickerView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF32F38680D512C8C576D10988B61605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A65896200B97114FB45B824F6FF4C0F6 /* Pods-APJTextPickerView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29440671D0A685F14478839128425BA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APJTextPickerView;
+			target = C0797CE936BE2B2825310BE5565398F3 /* APJTextPickerView */;
+			targetProxy = FEB3FC9EB6A8FB63320CC509CA2F2A61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CD121AE9377E108184B5F36447E4DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E1BEADF40B64BACF9B7EFC46571542 /* Pods-APJTextPickerView_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-APJTextPickerView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APJTextPickerView_Example/Pods-APJTextPickerView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_APJTextPickerView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		521F9DE291FF08CE9F1251017CCBF8A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F760675FC02B76DAECDC2534B06D306 /* APJTextPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/APJTextPickerView/APJTextPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/APJTextPickerView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/APJTextPickerView/APJTextPickerView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = APJTextPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		905E318E1A86D0B39DCCCB358CEAA06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F760675FC02B76DAECDC2534B06D306 /* APJTextPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/APJTextPickerView/APJTextPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/APJTextPickerView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/APJTextPickerView/APJTextPickerView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = APJTextPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF1FA5D32778FC24CCC8E7473F616672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20018802EBB0F094DAFFFB0F99F41BFE /* Pods-APJTextPickerView_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-APJTextPickerView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APJTextPickerView_Tests/Pods-APJTextPickerView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_APJTextPickerView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E667CC643B8C82A0A45721BD44C29D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F16EA15DEC0AC0066680E6B90C77A3 /* Pods-APJTextPickerView_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-APJTextPickerView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APJTextPickerView_Tests/Pods-APJTextPickerView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_APJTextPickerView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F3939D866942EC85CF52D85D1C5FEB84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D19DD9665A86AE2903A9F2BB0460D07 /* Pods-APJTextPickerView_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-APJTextPickerView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APJTextPickerView_Example/Pods-APJTextPickerView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_APJTextPickerView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15DB3EE016519A51B67D8F72516D5BC2 /* Build configuration list for PBXNativeTarget "Pods-APJTextPickerView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E667CC643B8C82A0A45721BD44C29D9C /* Debug */,
+				CF1FA5D32778FC24CCC8E7473F616672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97803B46811A9BDB5E70FA1303AFBFFE /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8948866AE302C54D2E94FDB45348F87 /* Build configuration list for PBXNativeTarget "APJTextPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521F9DE291FF08CE9F1251017CCBF8A1 /* Debug */,
+				905E318E1A86D0B39DCCCB358CEAA06F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F92DFCE503074B7B269BD0837D539A36 /* Build configuration list for PBXNativeTarget "Pods-APJTextPickerView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD121AE9377E108184B5F36447E4DD8 /* Debug */,
+				F3939D866942EC85CF52D85D1C5FEB84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

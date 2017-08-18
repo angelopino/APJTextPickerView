@@ -1,0 +1,16 @@
+PODS:
+  - APJTextPickerView (0.1.0)
+
+DEPENDENCIES:
+  - APJTextPickerView (from `../`)
+
+EXTERNAL SOURCES:
+  APJTextPickerView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  APJTextPickerView: 549439f869c47cfb2e35733d6ff50e88ef5e98f7
+
+PODFILE CHECKSUM: 48d60c4d199b0765f677268e12f3d0039b5b2bf9
+
+COCOAPODS: 1.3.1
