@@ -17,7 +17,7 @@ pod "APJTextPickerView"
 
 ## Author
 
-Angelo ?ino, pino.angelo@gmail.com
+Angelo Pino, pino.angelo@gmail.com
 
 ## License
 
