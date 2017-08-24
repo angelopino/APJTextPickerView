@@ -60,8 +60,21 @@ public class APJTextPickerView: UITextField {
     // common properties
     private(set) public var toolbar: UIToolbar?
     public weak var pickerDelegate: APJTextPickerViewDelegate?
-    public var cancelText = "Cancel"
-    public var doneText = "Done"
+    public var cancelText = "Cancel" {
+        didSet {
+            _updateToolbar()
+        }
+    }
+    public var doneText = "Done" {
+        didSet {
+            _updateToolbar()
+        }
+    }
+    public var pickerTitle: String? {
+        didSet {
+            _updateToolbar()
+        }
+    }
     
     // MARK: init methods
     override init(frame: CGRect) {
@@ -134,7 +147,7 @@ public class APJTextPickerView: UITextField {
         let cancelButton = UIBarButtonItem(title: cancelText, style: .plain, target: self, action: #selector(_cancel)),
         space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
         doneButton = UIBarButtonItem(title: doneText, style: .done, target: self, action: #selector(_done)),
-        titleBarButton = UIBarButtonItem(title: placeholder, style: .done, target: nil, action: nil)
+        titleBarButton = UIBarButtonItem(title: pickerTitle ?? placeholder, style: .done, target: nil, action: nil)
         titleBarButton.isEnabled = false
         
         toolbar = UIToolbar()
@@ -145,7 +158,6 @@ public class APJTextPickerView: UITextField {
         toolbar?.sizeToFit()
         
         inputAccessoryView = toolbar
-        
     }
     
     // MARK: action methods
