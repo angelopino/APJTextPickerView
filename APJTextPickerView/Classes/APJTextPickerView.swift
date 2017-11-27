@@ -34,7 +34,7 @@ public protocol APJTextPickerViewDataSource: class {
     func numberOfRows(in pickerView: APJTextPickerView) -> Int
 }
 
-public class APJTextPickerView: UITextField {
+open class APJTextPickerView: UITextField {
     
     // MARK: public properties
     public var type: APJTextPickerViewType = .date {
