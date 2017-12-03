@@ -44,7 +44,7 @@ open class APJTextPickerView: UITextField {
     }
     
     // date picker properties
-    public var currentDate = Date()
+    public var currentDate: Date!
     private(set) public var datePicker: UIDatePicker?
     public var dateFormatter = DateFormatter()
     
@@ -88,6 +88,7 @@ open class APJTextPickerView: UITextField {
     }
     
     private func _initialize() {
+        currentDate = Date()
         _updateType()
         _updateToolbar()
     }
