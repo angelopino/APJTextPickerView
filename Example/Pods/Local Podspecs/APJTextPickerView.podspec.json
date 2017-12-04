@@ -1,6 +1,6 @@
 {
   "name": "APJTextPickerView",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "summary": "APJTextPickerView is simple implementation for UITextField to use as UIPickerView and UIDatePicker.",
   "description": "APJTextPickerView is simple implementation for UITextField to use as UIPickerView and UIDatePicker. It allows to use UITextField as UIPickerView or UIDatePicker to pick data easily. It is designed to present a picker view to select data in UITextField.",
   "homepage": "https://github.com/angelopino/APJTextPickerView",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/angelopino/APJTextPickerView.git",
-    "tag": "0.0.6"
+    "tag": "0.0.7"
   },
   "platforms": {
     "ios": "9.0"

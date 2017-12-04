@@ -14,7 +14,7 @@ public enum APJTextPickerViewType {
 
 public protocol APJTextPickerViewDelegate: class {
     // date picker delegate
-    func textPickerView(_ textPickerView: APJTextPickerView, didSelectDate date: Date)
+    func textPickerView(_ textPickerView: APJTextPickerView, didSelectDate date: Date?)
     
     // strings picker delegate
     func textPickerView(_ textPickerView: APJTextPickerView, didSelectString row: Int)
@@ -23,7 +23,7 @@ public protocol APJTextPickerViewDelegate: class {
 
 public extension APJTextPickerViewDelegate {
     // date picker delegate
-    func textPickerView(_ textPickerView: APJTextPickerView, didSelectDate date: Date) {}
+    func textPickerView(_ textPickerView: APJTextPickerView, didSelectDate date: Date?) {}
     
     // strings picker delegate
     func textPickerView(_ textPickerView: APJTextPickerView, didSelectString row: Int) {}
@@ -44,17 +44,28 @@ open class APJTextPickerView: UITextField {
     }
     
     // date picker properties
-    public var currentDate: Date!
-    private(set) public var datePicker: UIDatePicker?
-    public var dateFormatter = DateFormatter()
+    public var currentDate: Date? {
+        didSet {
+            _updateCurrentDate()
+        }
+    }
+    private var _oldDateValue: Date?
+    public var changeOnValueChanged = false
+    public var datePicker: UIDatePicker? {
+        return inputView as? UIDatePicker
+    }
+    public var dateFormatter: DateFormatter!
     
     // strings picker properties
     public var currentIndexSelected: Int? {
         didSet {
-            _selectRowString()
+            _updateCurrentIndexSelected()
         }
     }
-    private(set) public var dataPicker: UIPickerView?
+    private var _oldIndexSelected: Int?
+    public var dataPicker: UIPickerView? {
+        return inputView as? UIPickerView
+    }
     public weak var dataSource: APJTextPickerViewDataSource?
     
     // common properties
@@ -88,7 +99,6 @@ open class APJTextPickerView: UITextField {
     }
     
     private func _initialize() {
-        currentDate = Date()
         _updateType()
         _updateToolbar()
     }
@@ -101,45 +111,83 @@ open class APJTextPickerView: UITextField {
     
     private func _updateType() {
         switch type {
-        case .strings: _initDataPicker()
-        case .date: _initDatePicker()
+        case .strings:
+            _initDataPicker()
+        case .date:
+            _initDatePicker()
+            _initDateFormatter()
         }
     }
     
     // date picker setup
     private func _initDatePicker() {
-        dataPicker = nil
-        datePicker = UIDatePicker()
-        datePicker?.datePickerMode = .date
-        inputView = datePicker
+        inputView = nil
+        let picker = UIDatePicker()
+        picker.datePickerMode = .date
+        picker.addTarget(self, action: #selector(_changeDate), for: .valueChanged)
+        inputView = picker
+    }
+    
+    private func _initDateFormatter() {
+        dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
     }
     
-    private func _selectDate() {
-        currentDate = datePicker?.date ?? currentDate
-        text = dateFormatter.string(from: currentDate)
-        pickerDelegate?.textPickerView(self, didSelectDate: currentDate)
+    private func _updateDateText() {
+        if let date = datePicker?.date {
+            text = dateFormatter.string(from: date)
+        } else {
+            text = nil
+        }
+    }
+    
+    private func _updateCurrentDate() {
+        if _oldDateValue != currentDate {
+            pickerDelegate?.textPickerView(self, didSelectDate: currentDate)
+            _updateDateText()
+        } else if currentDate == nil {
+            text = nil
+        }
+        datePicker?.setDate(currentDate ?? Date(), animated: true)
+        _oldDateValue = currentDate
+    }
+    
+    @objc private func _changeDate() {
+        if changeOnValueChanged {
+            switch type {
+            case .date:
+                _updateDateText()
+            case .strings:
+                _updateDataText()
+            }
+        }
     }
     
     // strings data picker setup
     private func _initDataPicker() {
-        datePicker = nil
-        dataPicker = UIPickerView()
-        dataPicker?.delegate = self
-        dataPicker?.dataSource = self
-        inputView = dataPicker
+        inputView = nil
+        let picker = UIPickerView()
+        picker.delegate = self
+        picker.dataSource = self
+        inputView = picker
     }
     
-    private func _selectString() {
+    private func _updateDataText() {
         if let row = dataPicker?.selectedRow(inComponent: 0) {
             text = pickerDelegate?.textPickerView(self, titleForRow: row)
-            pickerDelegate?.textPickerView(self, didSelectString: row)
         }
     }
     
-    private func _selectRowString() {
-        guard let row = currentIndexSelected, let count = dataSource?.numberOfRows(in: self), row < count else { return }
-        dataPicker?.selectRow(row, inComponent: 0, animated: true)
+    private func _updateCurrentIndexSelected() {
+        let count = dataSource?.numberOfRows(in: self) ?? -1
+        if let row = currentIndexSelected, count > 0, row < count, _oldIndexSelected != currentIndexSelected {
+            pickerDelegate?.textPickerView(self, didSelectString: row)
+            _oldIndexSelected = currentIndexSelected
+            _updateDataText()
+        } else if currentIndexSelected == nil {
+            text = nil
+        }
+        dataPicker?.selectRow(currentIndexSelected ?? 0, inComponent: 0, animated: true)
     }
     
     // toolbar setup
@@ -164,14 +212,21 @@ open class APJTextPickerView: UITextField {
     // MARK: action methods
     
     @objc private func _cancel() {
-        datePicker?.date = currentDate
+        switch type {
+        case .strings:
+            currentIndexSelected = _oldIndexSelected
+        case .date:
+            currentDate = _oldDateValue
+        }
         endEditing(true)
     }
     
     @objc private func _done() {
         switch type {
-        case .strings: _selectString()
-        case .date: _selectDate()
+        case .strings:
+            currentIndexSelected = dataPicker?.selectedRow(inComponent: 0)
+        case .date:
+            currentDate = datePicker?.date
         }
         endEditing(true)
     }
