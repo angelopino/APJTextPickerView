@@ -2,8 +2,19 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.7` Releases - [0.0.7](#007)
 - `0.0.6` Releases - [0.0.6](#006)
 - `0.0.5` Releases - [0.0.5](#005)
+
+## [0.0.7]
+Released on 2017-12-04.
+
+#### Added
+- `changeOnValueChanged` property, update text in value changed event.
+- reset old value in cancel action.
+
+#### Fix
+- return picker from inputView.
 
 ## [0.0.6]
 Released on 2017-10-01.
