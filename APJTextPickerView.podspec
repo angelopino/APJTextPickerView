@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'APJTextPickerView'
-  s.version          = '0.0.7'
+  s.version          = '0.0.8'
   s.summary          = 'APJTextPickerView is simple implementation for UITextField to use as UIPickerView and UIDatePicker.'
   s.description      = <<-DESC
 APJTextPickerView is simple implementation for UITextField to use as UIPickerView and UIDatePicker. It allows to use UITextField as UIPickerView or UIDatePicker to pick data easily. It is designed to present a picker view to select data in UITextField.
