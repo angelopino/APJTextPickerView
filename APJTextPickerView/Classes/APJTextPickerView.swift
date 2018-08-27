@@ -146,6 +146,7 @@ open class APJTextPickerView: UITextField {
             pickerDelegate?.textPickerView(self, didSelectDate: currentDate)
             _updateDateText()
         } else if currentDate == nil {
+            _oldDateValue = nil
             text = nil
         }
         datePicker?.setDate(currentDate ?? Date(), animated: true)
@@ -185,6 +186,7 @@ open class APJTextPickerView: UITextField {
             _oldIndexSelected = currentIndexSelected
             _updateDataText()
         } else if currentIndexSelected == nil {
+            _oldIndexSelected = nil
             text = nil
         }
         dataPicker?.selectRow(currentIndexSelected ?? 0, inComponent: 0, animated: true)
