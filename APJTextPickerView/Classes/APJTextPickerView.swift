@@ -142,7 +142,7 @@ open class APJTextPickerView: UITextField {
     }
     
     private func _updateCurrentDate() {
-        if _oldDateValue != currentDate {
+        if _oldDateValue != currentDate || (text?.isEmpty ?? false) {
             pickerDelegate?.textPickerView(self, didSelectDate: currentDate)
             _updateDateText()
         } else if currentDate == nil {

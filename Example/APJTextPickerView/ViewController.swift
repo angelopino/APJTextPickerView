@@ -43,7 +43,9 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: APJTextPickerViewDelegate {
-    func textPickerView(_ textPickerView: APJTextPickerView, didSelectDate date: Date) {
+    
+    func textPickerView(_ textPickerView: APJTextPickerView, didSelectDate date: Date?) {
+        guard let date = date else { return }
         print("Date Selected: \(date)")
     }
     
